@@ -29,13 +29,13 @@ class Server(paramiko.ServerInterface):
         return paramiko.OPEN_FAILED_ADMINISTRATIVELY_PROHIBITED
 
     def check_auth_password(self, username, password):
-        if username == 'kali' and password == 'kali':
+        if username == 'enter username' and password == 'enter password':
             return paramiko.AUTH_SUCCESSFUL
         return paramiko.AUTH_FAILED
 
 # Start SSH server
 if __name__ == '__main__':
-    server_ip = '192.168.1.71'  # Change to your server's IP if needed
+    server_ip = 'Enter your IP'  # Change to your server's IP if needed
     ssh_port = 2222
 
     try:
